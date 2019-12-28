@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北辰的博客</title>
+</head>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/public/layui/css/layui.css">
+<script src="/public/layui/layui.all.js"></script>
+<style>
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+    #head{
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      width: 374px;
+      overflow: hidden;
+    }
+  #nav{
+    width: 374px;
+    height: 912px;
+    display: flex;
+    flex-direction: column;
+  }
+   
+    #container{
+      float:right;
+      overflow: hidden;
+      width: 1527px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #zero{
+      width: 100%;
+      height: 709px;
+      
+    }
+    .jumbotron{
+      width: 100%;
+      height: 709px;
+      background-image: url("/public/beijing.jpg");
+      background-size: 100% 765px;
+      background-repeat: no-repeat;
+     padding-top:200px;
+     
+    }
+    #first{
+      width: 100%;
+      height:700px ;
+     /* border-bottom:2px solid rgb(230, 228, 227);*/
+      text-align: center;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: row;
+    }
+   /* #second{
+      width: 100%;
+      height:300px ;
+   
+     background-color:white;
+     border-bottom:2px solid rgb(230, 228, 227);
+     text-align: center;
+      padding-top: 120px;
+    }
+    #third{
+      width: 100%;
+      height:300px ;
+      background-color:white;
+      border-bottom:2px solid rgb(230, 228, 227);
+      text-align: center;
+      padding-top: 120px;
+    }
+    #forth{
+      width: 100%;
+      height:500px;
+      background-color:white;
+      text-align: center;
+      padding-top: 120px;
+    }*/
+    #foot{
+      width: 100%;
+      height:75px;
+      background-color: rgb(90, 89, 88);
+     
+    }
+ /*  #first:hover{
+      background-image: url("./../public/msf.jpg") ;
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #second:hover{
+      background-image: url("./../public/yyf.png");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #third:hover{
+      background-image: url("./../public/ndf.jpg");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #forth:hover{
+      background-image: url("./../public/tqf.jpg");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    @keyframes col {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+               opacity: 1;
+            }
+        }
+   */
+   li{
+     height: 80px;
+   }
+
+</style>
+<body>
+    <div id="head">
+     
+    <ul class="layui-nav layui-nav-tree"  id="nav">
+      <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+        <li class="layui-nav-item " id="first-nav" style="height: 134px;">
+         <img src="/public/clibow.jpeg" class="layui-anim layui-anim-rotate layui-anim-loop"style="height:51px;width: 51px;position: relative;top: 45px;left: 38px;border-radius:70%;"> <p style="position: relative;top:0px;left:210px;font-size:2.5em;">北辰</p>
+        </li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-home" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">主页</p></a></li>
+        <li class="layui-nav-item"><a  style="height:80px ;"><i class="layui-icon layui-icon-edit" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">写博客</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-list" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">文章</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-share" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">分享</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-location" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">定位</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-cellphone" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">联系</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-friends" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">关于我</p></a></li>
+      </ul>
+    </div>
+    <div id="container">
+       <div id="zero">
+      <!-- <div class="jumbotron">
+  <h1 class="display-4" style="position: relative;left: 400px;">Welcome to Polaris</h1>
+  <p class="lead" style="position: relative;left: 500px;">在北辰以北，才能看到那颗最亮的星，欢迎来到北辰的微博</p>
+  
+  
+  <a class="btn btn-primary btn-lg" href="#" role="button" style="position: relative;left: 500px;top: 300px;">Learn more</a>
+</div>-->
+<div class="jumbotron">
+  <!--<h1 class="display-3">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-2">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>-->
+<p class="lead" style="position: relative;font-size:xx-large;left: 300px;color: antiquewhite;">北辰以北で、あの一番明るい星を見ることができます</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp北辰のミニブログにようこそ。</p>
+<p class="lead" style="position: relative;left: 300px;color: rgb(241, 239, 237);font-size: x-large;top: 110px;">在北辰以北，才能看到那颗最亮的星，欢迎来到北辰的博客。</p>
+<a class="btn btn-primary btn-lg" href="#" role="button" style="position: relative;left: 300px;top: 150px;">了解更多</a>
+</div>
+
+       </div>
+     
+    <div id="first">
+        <div  style="width:800px ;height: 700px;">
+           <img src="/public/msissue1.jpg" style="position: relative;top: -50px;">
+        </div>
+        <div style="width:727px;height: 700px;display: flex;flex-direction: column;"> 
+            <div style="width:727px;height: 500px;">
+              <h1 >秒速五厘米</h1>
+              <h3 class="text-justify font-weight-normal"><a href="/a/2019/12/25/ms.html"><p>在秒速5厘米间，他们发现了彼此。也在秒速5厘米之间，他们错过了彼此。末时，他最后的一笑，不仅是如释重负，还是一种坦然:即使相见，时光不能倒流、过去亦不能再来。不如留下昔日的记忆、错过的瞬间，藏于心底，细细回味纯纯的爱……</p>
+</a></h3>
+            </div>
+            <div style="width:727px;height: 200px;">
+                 
+               <button  class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal"style="">
+               
+               <a href="/page3" class="previous"><i></i>上一页</a>
+               
+               </button>
+               <button  class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal"style="">
+                
+                <a href="javascript:void(0)" class="next"><i></i>下一页</a>
+                
+               </button>  
+                   
+            </div>
+        </div>
+    </div>
+ 
+
+
+   <!--<div id="second">
+        <img src=""><p></p>
+    </div>
+    <div id="third">
+        <img src=""><p></p>
+    </div>
+    <div id="forth">
+        <img src=""><p></p>
+    </div>-->
+    
+    <div id="foot" >
+            <h6 style="text-align: center;letter-spacing: 3px;color: rgb(197, 193, 188);padding-top: 20px;">
+                那些相拥而醉的岁月，
+                酒精的醇香一蒸发，
+                回味是一张羊皮纸上的图画， 
+                百年之后，
+                才拥有稀奇。 </h6>
+           <h6 style="padding-left:1200px;letter-spacing: 3px;color: rgb(197, 193, 188);">——————《致北辰》</h6>
+          
+   
+      
+ </div>
+</body>
+<script>
+ /* window.onload = function(){
+    var first = document.getElementById("first");
+     var wenzi = document.getElementsByClassName("text");
+     first.onmouseover=function(){
+       wenzi[0].style.display = "none";
+       
+     }
+     first.onmouseout=function(){
+       
+     wenzi[0].style.display = "block";
+     }
+     var second = document.getElementById("second");
+     
+     second.onmouseover=function(){
+       wenzi[1].style.display = "none";
+       
+     }
+     second.onmouseout=function(){
+       
+     wenzi[1].style.display = "block";
+     }
+     var third = document.getElementById("third");
+  
+     third.onmouseover=function(){
+       wenzi[2].style.display = "none";
+       
+     }
+     third.onmouseout=function(){
+       
+     wenzi[2].style.display = "block";
+     }
+     var forth = document.getElementById("forth");
+  
+     forth.onmouseover=function(){
+       wenzi[3].style.display = "none";
+       
+     }
+     forth.onmouseout=function(){
+       
+     wenzi[3].style.display = "block";
+     }
+    }*/
+</script>
+</html>

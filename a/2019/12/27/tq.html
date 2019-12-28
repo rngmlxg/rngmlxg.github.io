@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北辰的博客</title>
+</head>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/public/layui/css/layui.css">
+<script src="/public/layui/layui.all.js"></script>
+<style>
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+    #head{
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      width: 374px;
+      overflow: hidden;
+    }
+  #nav{
+    width: 374px;
+    height: 912px;
+    display: flex;
+    flex-direction: column;
+  }
+   
+    #container{
+      float:right;
+      overflow: hidden;
+      width: 1527px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #zero{
+      width: 100%;
+      height: 709px;
+      
+    }
+    .jumbotron{
+      width: 100%;
+      height: 709px;
+      background-image: url("/public/beijing.jpg");
+      background-size: 100% 765px;
+      background-repeat: no-repeat;
+     padding-top:200px;
+     
+    }
+    #first{
+      width: 100%;
+      height:700px ;
+     /* border-bottom:2px solid rgb(230, 228, 227);*/
+      text-align: center;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: row;
+    }
+   /* #second{
+      width: 100%;
+      height:300px ;
+   
+     background-color:white;
+     border-bottom:2px solid rgb(230, 228, 227);
+     text-align: center;
+      padding-top: 120px;
+    }
+    #third{
+      width: 100%;
+      height:300px ;
+      background-color:white;
+      border-bottom:2px solid rgb(230, 228, 227);
+      text-align: center;
+      padding-top: 120px;
+    }
+    #forth{
+      width: 100%;
+      height:500px;
+      background-color:white;
+      text-align: center;
+      padding-top: 120px;
+    }*/
+    #foot{
+      width: 100%;
+      height:75px;
+      background-color: rgb(90, 89, 88);
+     
+    }
+ /*  #first:hover{
+      background-image: url("./../public/msf.jpg") ;
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #second:hover{
+      background-image: url("./../public/yyf.png");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #third:hover{
+      background-image: url("./../public/ndf.jpg");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    #forth:hover{
+      background-image: url("./../public/tqf.jpg");
+      background-repeat: no-repeat;
+      animation: col 3s;  
+    }
+    @keyframes col {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+               opacity: 1;
+            }
+        }
+   */
+   li{
+     height: 80px;
+   }
+
+</style>
+<link rel="stylesheet" href="/public/style.css">
+<body>
+    <div id="head">
+     
+    <ul class="layui-nav layui-nav-tree"  id="nav">
+      <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+        <li class="layui-nav-item " id="first-nav" style="height: 134px;">
+         <img src="/public/clibow.jpeg" class="layui-anim layui-anim-rotate layui-anim-loop"style="height:51px;width: 51px;position: relative;top: 45px;left: 38px;border-radius:70%;"> <p style="position: relative;top:0px;left:210px;font-size:2.5em;">北辰</p>
+        </li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-home" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">主页</p></a></li>
+        <li class="layui-nav-item"><a  style="height:80px ;"><i class="layui-icon layui-icon-edit" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">写博客</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-list" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">文章</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-share" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">分享</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-location" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">定位</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-cellphone" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">联系</p></a></li>
+        <li class="layui-nav-item"><a style="height:80px ;"><i class="layui-icon layui-icon-friends" style="font-size: 30px; color: #1E9FFF;position: relative;top:20px;left: 25px;"></i><p style="position: relative;top:-33px;left:200px;font-size:1.5em;">关于我</p></a></li>
+      </ul>
+    </div>
+    <h4 id="container">
+       <div id="zero">
+      <!-- <div class="jumbotron">
+  <h1 class="display-4" style="position: relative;left: 400px;">Welcome to Polaris</h1>
+  <p class="lead" style="position: relative;left: 500px;">在北辰以北，才能看到那颗最亮的星，欢迎来到北辰的微博</p>
+  
+  
+  <a class="btn btn-primary btn-lg" href="#" role="button" style="position: relative;left: 500px;top: 300px;">Learn more</a>
+</div>-->
+<div class="jumbotron">
+  <!--<h1 class="display-3">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-2">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>-->
+<p class="lead" style="position: relative;font-size:xx-large;left: 300px;color: antiquewhite;">北辰以北で、あの一番明るい星を見ることができます</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp北辰のミニブログにようこそ。</p>
+<p class="lead" style="position: relative;left: 300px;color: rgb(241, 239, 237);font-size: x-large;top: 110px;">在北辰以北，才能看到那颗最亮的星，欢迎来到北辰的博客。</p>
+<a class="btn btn-primary btn-lg" href="#" role="button" style="position: relative;left: 300px;top: 150px;">了解更多</a>
+</div>
+
+       </div>
+
+       <div id="tx" style="height: 900px;width: 1527px;">
+        <div class="tx_rotate">
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rotate">
+            <div class="flip_rotate">
+              <div class="flip_pos">
+                <div class="flip"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <h3 style="line-height: 2;letter-spacing: 2px;"><p>  女主是个可以控制天气的“晴女”，能把雨天变成晴天，男女主都是因为家庭问题出来独立谋生的少年，因为找不到工作，为了生存，男主便提出借助女主的能力去赚钱，因为一直下雨，很多人需要晴天来找女主帮忙，女主开始通过控制天气满足他们的要求来赚钱达成交易，但是改变天气得付出代价，每次使用能力女主的身体就会慢慢变透明，大家却肆意妄为的去要求女主改变天气，后来气候变得越来越糟糕，盛夏飞雪变化无常，要牺牲女主才可以停止这种灾难，这是作为“晴女”的命运和代价……</p>
+
+<p>女主被迫独自承担起责任，失去女主后男主才意识到利用这种能力是错误的，然后救回了女主，最后男女主放下一切释怀了，两个人都回归到正常的生活并且在一起。</p>
+</h3>
+       </div>
+   <!--<div id="second">
+        <img src=""><p></p>
+    </div>
+    <div id="third">
+        <img src=""><p></p>
+    </div>
+    <div id="forth">
+        <img src=""><p></p>
+    </div>-->
+      
+    <div id="foot" >
+            <h6 style="text-align: center;letter-spacing: 3px;color: rgb(197, 193, 188);padding-top: 20px;">
+                那些相拥而醉的岁月，
+                酒精的醇香一蒸发，
+                回味是一张羊皮纸上的图画， 
+                百年之后，
+                才拥有稀奇。 </h6>
+           <h6 style="padding-left:1200px;letter-spacing: 3px;color: rgb(197, 193, 188);">——————《致北辰》</h6>
+          
+   
+      
+ </div>
+</body>
+<script>
+ /* window.onload = function(){
+    var first = document.getElementById("first");
+     var wenzi = document.getElementsByClassName("text");
+     first.onmouseover=function(){
+       wenzi[0].style.display = "none";
+       
+     }
+     first.onmouseout=function(){
+       
+     wenzi[0].style.display = "block";
+     }
+     var second = document.getElementById("second");
+     
+     second.onmouseover=function(){
+       wenzi[1].style.display = "none";
+       
+     }
+     second.onmouseout=function(){
+       
+     wenzi[1].style.display = "block";
+     }
+     var third = document.getElementById("third");
+  
+     third.onmouseover=function(){
+       wenzi[2].style.display = "none";
+       
+     }
+     third.onmouseout=function(){
+       
+     wenzi[2].style.display = "block";
+     }
+     var forth = document.getElementById("forth");
+  
+     forth.onmouseover=function(){
+       wenzi[3].style.display = "none";
+       
+     }
+     forth.onmouseout=function(){
+       
+     wenzi[3].style.display = "block";
+     }
+    }*/
+</script>
+</html>

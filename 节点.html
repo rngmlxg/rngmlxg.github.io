@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--<div id="a"></div>
+    <div id="p"></div>
+    <button onclick="wcopy()"></button>
+<script>
+    /*document.body.insertBefore(divObj,a);
+    a.appendChild(divObj);*/
+  /* var divObj = document.createElement('div');
+   a.insertBefore(divObj,b);
+    var p = document.getElementById('p');
+    p.onclick = function(){
+        alert(1)
+    }
+    function wcopy(){
+    var newObj = p.cloneNode(true)
+    console.dir(newObj)
+    document.body.appendChild(newObj);
+    }
+    var b = document.getElementById("b");
+    console.dir(b)
+    b.parentNode.removeChild(b);*/
+</script>-->
+    <div>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+        <p><input type="checkbox">#############1</p>
+    </div>
+    <button onclick="allXuan(true)">全选</button>
+    <button onclick="allXuan(false)">全不选</button>
+    <button onclick="fanXuan()">反选</button>
+    <button onclick="del()">删除</button>
+    <script>
+        function allXuan(status)
+        {
+            var inps = document.getElementsByTagName('input');
+            for(var i=0;i<inps.length;i++){
+                console.dir(inps[i]);
+                inps[i].checked = status;
+            }
+            
+        }
+        function fanXuan(){
+            var inps = document.getElementsByTagName('input');
+            for(var i=0;i<inps.length;i++){
+                if(inps[i].checked ==true){
+                    inps[i].checked = false;
+                }
+                else{
+                    inps[i].checked = true;
+                }
+            }
+        }
+        function del(){
+            var inps = document.getElementsByTagName('input')
+            
+            for (var i = 0;i<inps.length;i++){
+                if(inps[i].checked==true){
+                    var j=i+1;
+                    var k=i;
+                   inps.removeChild(inps[i]);
+
+                   while(j<inps.length)
+                    {
+                    inps[k]=inps[j];
+                    k++;
+                    j++;
+                    }
+                   }
+                }
+                
+            }
+        
+    </script>
+</body>
+
+</html>
